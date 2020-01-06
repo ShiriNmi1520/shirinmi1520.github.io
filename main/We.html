@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>美食尋樂趣</title>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-fluid p-0">
+  
+<!-- Bootstrap row -->
+<div class="row" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block"><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group">
+            <!-- Separator with title -->
+                          
+                <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-bars fa-fw mr-3"></span>
+                    <span id="collapse-text" class="menu-collapsed"  style="font-size: 20px;">選單</span>
+                </div>
+            </a>
+                
+            </li>
+            <!-- /END Separator -->
+            <!-- Menu with submenu -->
+            <a href="../main/hot.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-home fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">熱門推薦</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+
+
+            <a href="../main/User.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-user fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">基本資料</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+           <!--  <div id='submenu1' class="collapse sidebar-submenu">
+                <a href="#" id="test" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Charts</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+            </div> -->
+            <a href="../main/Search.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-search fa-fw mr-3"></span>
+                    <span class="menu-collapsed">搜尋引擎</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <!-- <div id='submenu2' class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Settings</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Password</span>
+                </a>
+            </div>  -->           
+            <a href="../main/MyLove.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-gratipay fa-fw mr-3"></span>
+                    <span class="menu-collapsed">我的最愛</span>    
+                </div>
+            </a>
+            <!-- Separator with title -->
+            <!-- <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>OPTIONS</small> -->
+            </li>
+            <!-- /END Separator -->
+            <a href="../main/Record.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-history  fa-fw mr-3"></span>
+                    <span class="menu-collapsed">瀏覽紀錄</span>
+                </div>
+            </a>
+            <a href="../main/We.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-envelope-o fa-fw mr-3"></span>
+                    <span class="menu-collapsed">聯絡我們</span>
+                </div>
+            </a>
+            <!-- Separator without title -->
+            <li class="list-group-item sidebar-separator menu-collapsed"></li>            
+            <!-- /END Separator -->
+            <a href="../main/Description.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-question fa-fw mr-3"></span>
+                    <span class="menu-collapsed">說明</span>
+                </div>
+            </a>
+            
+            <!-- Logo -->
+            <!-- <li class="list-group-item logo-separator d-flex justify-content-center">
+                <img src='https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg' width="30" height="30" />    
+            </li> -->   
+        </ul><!-- List Group END-->
+    </div><!-- sidebar-container END -->
+
+    <!-- MAIN -->
+    <div class="col">
+        
+<!--         <h1>
+            Collapsing Menu
+            <small class="text-muted">Version 2.1</small>
+        </h1>
+        
+        
+        <div class="card">
+            <h4 class="card-header">Requirements</h4>
+            <div class="card-body">
+                <ul>
+                    <li>JQuery</li>
+                    <li>Bootstrap 4 beta-3</li>
+                </ul>
+            </div>
+        </div> -->
+<!-- 
+        <label>Username</label>
+            <input type="text" value="jsmith" class="input-xlarge">
+            <label>First Name</label>
+            <input type="text" value="John" class="input-xlarge">
+            <label>Last Name</label>
+            <input type="text" value="Smith" class="input-xlarge">
+            <label>Email</label>
+            <input type="text" value="jsmith@yourcompany.com" class="input-xlarge">
+            <label>Address</label> -->
+  
+              <h1 style="margin-top: 5%;">聯絡我們</h1>
+              <br/>
+              <br/>
+
+               <p>
+                 親愛的會員及網友您好，若您有任何意見或疑問，<br/>
+                  我們誠摯地邀請您直接寄到我們專人服務的電子郵件信箱，<br/>
+                   要求提供協助。我們將盡力為您解答！為了加速來信處理時間，<br/>
+                     請在主旨欄位選擇正確的分類選項，<br/>
+                     我們將用心聆聽，並以最快的速度回應給您，謝謝。<br/>
+
+               </p>
+
+	<div class="container">   
+        <form class="form-horizontal">
+            <fieldset>
+
+        <!-- Form Name -->
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" style="margin-top: 5%;" for="textinput">您的大名</label>  
+          <div class="col-md-4">
+          <input id="textinput" name="textinput" placeholder="" class="form-control input-md" required="" type="text">
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="selectbasic">您的稱呼</label>
+          <div class="col-md-4">
+            <select id="selectbasic" name="selectbasic" class="form-control">
+              <option value="0">請選擇</option>
+              <option value="1">先生</option>
+              <option value="2">女士</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">您的郵件</label>  
+          <div class="col-md-4">
+          <input id="textinput" name="textinput" placeholder="" class="form-control input-md" required="" type="text">
+            </div>
+        </div>
+
+         <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">您的電話</label>  
+          <div class="col-md-4">
+          <input id="textinput" name="textinput" placeholder="" class="form-control input-md" required="" type="text">
+            </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="selectbasic">信件主旨</label>
+          <div class="col-md-4">
+            <select id="selectbasic" name="selectbasic" class="form-control">
+              <option value="0">請選擇類別</option> 
+              <option value="1">網站問題</option>
+              <option value="2">建議問題</option>
+              <option value="3">推薦問題</option>
+              <option value="4">其他</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="selectbasic">處理方式</label>
+          <div class="col-md-4">
+            <select id="selectbasic" name="selectbasic" class="form-control">
+              <option value="0">請選擇</option>
+              <option value="1">需回覆</option>
+              <option value="2">不需回覆</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="selectbasic">聯絡方式</label>
+          <div class="col-md-4">
+            <select id="selectbasic" name="selectbasic" class="form-control">
+              <option value="0">請選擇</option>
+              <option value="1">郵件</option>
+              <option value="2">電話</option>
+              <option value="2">簡訊</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="selectbasic">聯絡時間</label>
+          <div class="col-md-4">
+            <select id="selectbasic" name="selectbasic" class="form-control">
+              <option value="0">請選擇</option>
+              <option value="1">早上09-12</option>
+              <option value="2">下午12-18</option>
+              <option value="3">晚間18-22</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">信件內容</label>  
+          <div class="col-md-4">
+          <input id="textinput" name="textinput" placeholder="" class="form-control input-md" required="" type="text">
+            </div>
+        </div>
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="save"></label>
+          <div class="col-md-8">
+            <button id="save" name="save" class="btn btn-success">確認送出</button>
+            <button id="cancel" name="cancel" class="btn btn-danger">取消</button>
+          </div>
+        </div>
+
+            </fieldset>
+        </form>
+    </div>
+</div>
+       
+
+        </div><!-- Main Col END -->   
+    </div><!-- body-row END -->
+</div><!-- container -->
+<!-- partial -->
+<script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

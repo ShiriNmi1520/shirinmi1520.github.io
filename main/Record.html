@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>美食尋樂趣</title>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-fluid p-0">
+  
+<!-- Bootstrap row -->
+<div class="row" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block"><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group">
+            <!-- Separator with title -->
+                          
+                <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-bars fa-fw mr-3"></span>
+                    <span id="collapse-text" class="menu-collapsed"  style="font-size: 20px;">選單</span>
+                </div>
+            </a>
+                
+            </li>
+            <!-- /END Separator -->
+            <!-- Menu with submenu -->
+            <a href="../main/hot.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-home fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">熱門推薦</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+
+
+            <a href="../main/User.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-user fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">基本資料</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+           <!--  <div id='submenu1' class="collapse sidebar-submenu">
+                <a href="#" id="test" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Charts</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+            </div> -->
+            <a href="../main/Search.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-search fa-fw mr-3"></span>
+                    <span class="menu-collapsed">搜尋引擎</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <!-- <div id='submenu2' class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Settings</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Password</span>
+                </a>
+            </div>  -->           
+            <a href="../main/MyLove.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-gratipay fa-fw mr-3"></span>
+                    <span class="menu-collapsed">我的最愛</span>    
+                </div>
+            </a>
+            <!-- Separator with title -->
+            <!-- <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>OPTIONS</small> -->
+            </li>
+            <!-- /END Separator -->
+            <a href="../main/Record.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-history  fa-fw mr-3"></span>
+                    <span class="menu-collapsed">瀏覽紀錄</span>
+                </div>
+            </a>
+            <a href="../main/We.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-envelope-o fa-fw mr-3"></span>
+                    <span class="menu-collapsed">聯絡我們</span>
+                </div>
+            </a>
+            <!-- Separator without title -->
+            <li class="list-group-item sidebar-separator menu-collapsed"></li>            
+            <!-- /END Separator -->
+            <a href="../main/Description.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-question fa-fw mr-3"></span>
+                    <span class="menu-collapsed">說明</span>
+                </div>
+            </a>
+            
+            <!-- Logo -->
+            <!-- <li class="list-group-item logo-separator d-flex justify-content-center">
+                <img src='https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg' width="30" height="30" />    
+            </li> -->   
+        </ul><!-- List Group END-->
+    </div><!-- sidebar-container END -->
+
+    <!-- MAIN -->
+    <div class="col">
+        
+<!--         <h1>
+            Collapsing Menu
+            <small class="text-muted">Version 2.1</small>
+        </h1>
+        
+        
+        <div class="card">
+            <h4 class="card-header">Requirements</h4>
+            <div class="card-body">
+                <ul>
+                    <li>JQuery</li>
+                    <li>Bootstrap 4 beta-3</li>
+                </ul>
+            </div>
+        </div> -->
+<!-- 
+        <label>Username</label>
+            <input type="text" value="jsmith" class="input-xlarge">
+            <label>First Name</label>
+            <input type="text" value="John" class="input-xlarge">
+            <label>Last Name</label>
+            <input type="text" value="Smith" class="input-xlarge">
+            <label>Email</label>
+            <input type="text" value="jsmith@yourcompany.com" class="input-xlarge">
+            <label>Address</label> -->
+
+
+                      <!-- https://bootsnipp.com/snippets/qlxZN 是參考這個網址 -->
+
+    <div class="col-md-8 blogShort" style="margin-top: 50px;">
+	 <h1 id="kullanicihebir">瀏覽紀錄</h1>
+
+    <table class="table kullaniciTablosu">
+    <thead>
+    <tr>  
+    <th>店家名稱</th>
+    <th>還未想到</th>
+    <th>還未想到</th>
+    </tr>
+    </thead>
+      
+    <tbody>
+    
+
+    <tr>
+        <td>
+            <span class="chat-img pull-left">             
+            <a class="btn btn-blog pull-right marginBottom10" href="https://missrblog.com/204/">食記》台中北區‧Hun混</a> 
+            </span>
+        </td>
+        <td>Morrison</td>
+    </tr>
+
+      <tr>
+          <td>       
+          <span class="chat-img pull-left">
+              <a class="btn btn-blog pull-right marginBottom10" href="https://orange-dog.com/tigersugar/">【台中飲料】老虎堂</a> 
+          </span>
+        </td>
+          <td>Hendrix</td>
+          <td> test</td>
+      </tr> 
+
+      <tr>
+        <td>       
+            <span class="chat-img pull-left">
+            <a class="btn btn-blog pull-right marginBottom10" href="https://cheer198.pixnet.net/blog/post/35381986-%E2%96%B6%E3%80%90%E5%8F%B0%E4%B8%AD-%E5%8C%97%E5%8D%80%E3%80%91%E6%9D%8E%E8%A8%98%E8%8D%89%E5%B1%AF%E9%BA%BB%E7%B3%AC%E2%98%9E%E5%8F%B0%E4%B8%AD%E5%A5%BD%E5%90%83%E9%95%B7">【台中-北區】李記草屯麻糬</a>
+            </span>
+        </td>
+        <td>Hendrix</td> 
+        <td> test</td>
+      </tr>
+
+    </tbody>
+  </table>
+       
+
+        </div><!-- Main Col END -->   
+    </div><!-- body-row END -->
+</div><!-- container -->
+<!-- partial -->
+<script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

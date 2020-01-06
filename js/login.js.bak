@@ -1,0 +1,32 @@
+$(document).ready(function() {
+  $("#submit").click(function() {
+    var data = {"email" : $("#id").val(), "password" : $("#pwd").val()};
+	var response = grecaptcha.getResponse();
+	console.log(response);
+    console.log(data);
+    if(response.length>0)
+    {
+        $.ajax({
+        type: "POST",
+        url: "http://enigmatic-chamber-09650.herokuapp.com/account/auth",
+        dataType: "json",
+        contentType: "application/x-www-form-urlencoded",
+        data: data,
+        success: function(data) {
+          //登入成功
+          if(data.token){
+            alert("success" + JSON.stringify(data));
+            sessionStorage.setItem("token", data.token);
+            window.location="main/index.html";
+          }
+        },
+        error: function(data) {
+          alert("failed" + JSON.stringify(data.responseJSON));
+        }
+      });
+    }
+    else {
+      alert("reCAPTCHA未驗證!");
+    }
+  });
+});

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*-------------------------------- END ----*/
+    #body-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row{
+        margin-left: 50px;
+        margin-right: -250px;
+    }
+
+    #sidebar-container {
+        min-height: 100vh;
+        background-color: #132644;
+        padding: 0;
+        /* flex: unset; */
+    }
+    
+    .sidebar-expanded {
+        width: 230px;
+    }
+    
+    .sidebar-collapsed {
+        /*width: 60px;*/
+        width: 100px;
+    }
+
+    /* ----------| Menu item*/    
+    #sidebar-container .list-group a {
+        height: 50px;
+        color: white;
+    }
+
+    /* ----------| Submenu item*/    
+    #sidebar-container .list-group li.list-group-item {
+        background-color: #132644;
+    }
+    
+    #sidebar-container .list-group .sidebar-submenu a {
+        height: 45px;
+        padding-left: 30px;
+    }
+    
+    .sidebar-submenu {
+        font-size: 0.9rem;
+    }
+
+    /* ----------| Separators */    
+    .sidebar-separator-title {
+        background-color: #132644;
+        height: 35px;
+    }
+    
+    .sidebar-separator {
+        background-color: #132644;
+        height: 25px;
+    }
+    
+    .logo-separator {
+        background-color: #132644;
+        height: 60px;
+    }
+    
+    a.bg-dark {
+        background-color: #132644 !important;
+    }
+
+    /*上面的是原本的*/
+
+    /*下面的是這個網頁的CSS*/
+
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.address{
+    width:30%;
+}
+
+.name {
+    width:15%;
+}
+
+.rating{
+    width:6%;
+}
+
+.ratingCount{
+    width:7%;
+}
+
+.floor{
+    width:8%;
+}
+
+}
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+
+
+
+/*20191112*/
+#sailorTableArea{
+    overflow-x: auto;
+    overflow-y: auto;
+}
+#sailorTable{
+    white-space: normal;
+}
+tbody {
+    display:block;
+    overflow:auto;
+}
+
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+.fs-it-btn {
+  margin-top: 10px;
+  border: 1px solid #a2a2a2;
+  border-radius: 0;
+  color: #fff;
+  font-weight: bold;
+}
+.bg-blue {
+    background-color: #2c9deb;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.test{
+    padding: 0;
+    list-style: none;
+}
+.test img{
+    margin-top: 3%;
+    height: 50px;
+    width: 50px;
+}    
+.test li{
+    margin-top: 1%;
+    }
+
+.damo {
+    height: 310px;
+    width: 100%;
+    margin-top: 1%;
+    border:2px #123456 solid;
+}
+
+.test1{
+    font-size: 110%;
+    font-family: 微軟正黑體;
+}
+
+.test2{
+    font-size: 110%;
+    font-family: 標楷體; 
+    font-weight: 600;
+}
+
+.test3{
+    font-size: 110%;
+    font-family: 標楷體; 
+    font-weight: 600;
+    background-color: #EDEDED;
+    border-top-style:solid; 
+    border-bottom-style:solid;
+    border-top-width:medium;
+    border-bottom-color:#5a83bf;
+    border-top-color:#5a83bf;
+
+}

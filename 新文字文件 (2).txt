@@ -1,0 +1,88 @@
+﻿                    <div id="modal" class="modal fade modal-detail in" style="display: block;">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-cpntent">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">公司/商業登記資料</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered tb-single result">
+                            <tbody>
+                                <tr>
+                                    <td class="hd">公司/商業登記名稱</td>
+                                    <td>(施)青蚵(50)</td>
+                                </tr>
+                                <tr>
+                                    <td class="hd">登錄字號</td>
+                                    <td>N-200111396-00000-3</td>
+                                </tr>
+                                <tr>
+                                    <td class="hd">公司網址</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="hd">LOGO</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer ct">
+			::before
+                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			::after                    
+</div>
+  
+
+              
+<tbody>
+                                                    
+                                                            <tr>
+                                                                <td>公司/商業登記</td>
+                                                                <td class="lt">N-200111396-00000-3<br>(施)青蚵(50)</td>
+                                                                <td class="lt">彰化縣彰化市南門公有零售市場50號</td>
+                                                                <td class="lt">(施)青蚵(50)<br></td>
+                                                                <td><a href="?dc=068048048048049056050049053049&cs=1&ct=&req=get" class="btn btn-icon view" title="檢視" data-toggle="modal" data-target="#modal" data-backdrop="static"><i class="icon-eye-2"></i></a></td>
+                                                            </tr>
+
+
+
+<div id="modal" class="modal fade modal-detail in" style="display: block;">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-cpntent">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">公司/商業登記資料</h4>
+                                        <div>
+                    <div class="modal-body">
+                        <table class="table table-bordered tb-single result">
+                            <tbody>
+                                <tr>
+                                    <td class="hd">公司/商業登記名稱</td>
+                                    <td>(施)青蚵(50)</td>
+                                </tr>
+                                <tr>
+                                    <td class="hd">登錄字號</td>
+                                    <td>N-200111396-00000-3</td>
+                                </tr>
+                                <tr>
+                                    <td class="hd">公司網址</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="hd">LOGO</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer ct">
+            ::before
+                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+            ::after                    
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+https://enigmatic-chamber-09650.herokuapp.com
+
+https://enigmatic-chamber-09650.herokuapp.com/test/shopInfo
+https://enigmatic-chamber-09650.herokuapp.com/account/auth
+{"email": "test@test.com", "password": "test123"}
+
+
+Headers
+
+X-Auth-Token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJpZnkiOnRydWUsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsImlhdCI6MTU3NDA3Nzc0OCwiZXhwIjoxNTc0MDg0OTQ4fQ.cYTiLCXYU0R9sGwQwugaCWs9BYXTn2JNJUhHJbQC3Yk
+
+
+https://enigmatic-chamber-09650.herokuapp.com/search/food
+latitude 23.955605
+longitude 120.687309
+
+distance 500(¶ZÂ÷)
+keyword ¶¼®Æ
+
+X-Auth-Token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJpZnkiOnRydWUsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsImlhdCI6MTU3Mzg4MDkwNCwiZXhwIjoxNTczODg4MTA0fQ.9a1MBs1siYVo2OKT8J3nC6_LOnzOOe7HJp2YsiiDHWM
+
+
+
+
+sessionStorage.getItem("token")
+
+100,134   updateTable(data.§ï);
+Network

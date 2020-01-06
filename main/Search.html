@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>美食尋樂趣</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="../css/Search.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../js/Search.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe0sAmBDIOfkTVQgNOop_FIYk6mW5Uspc&libraries=geometry"></script>
+<script src="../js/jquery.tablesorter.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-fluid p-0">
+  
+<!-- Bootstrap row -->
+<div class="row" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block"><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group">
+            <!-- Separator with title -->
+                          
+                <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-bars fa-fw mr-3"></span>
+                    <span id="collapse-text" class="menu-collapsed"  style="font-size: 20px;">選單</span>
+                </div>
+            </a>
+                
+            </li>
+            <!-- /END Separator -->
+            <!-- Menu with submenu -->
+            <a href="../main/hot.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-home fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">熱門推薦</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+
+
+            <a href="../main/User.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-user fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">基本資料</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+           <!--  <div id='submenu1' class="collapse sidebar-submenu">
+                <a href="#" id="test" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Charts</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+            </div> -->
+            <a href="../main/Search.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-search fa-fw mr-3"></span>
+                    <span class="menu-collapsed">搜尋引擎</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <!-- <div id='submenu2' class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Settings</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Password</span>
+                </a>
+            </div>  -->           
+            <a href="../main/MyLove.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-gratipay fa-fw mr-3"></span>
+                    <span class="menu-collapsed">我的最愛</span>    
+                </div>
+            </a>
+            <!-- Separator with title -->
+            <!-- <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>OPTIONS</small> -->
+            </li>
+            <!-- /END Separator -->
+            <a href="../main/Record.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-history  fa-fw mr-3"></span>
+                    <span class="menu-collapsed">瀏覽紀錄</span>
+                </div>
+            </a>
+            <a href="../main/We.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-envelope-o fa-fw mr-3"></span>
+                    <span class="menu-collapsed">聯絡我們</span>
+                </div>
+            </a>
+            <!-- Separator without title -->
+            <li class="list-group-item sidebar-separator menu-collapsed"></li>            
+            <!-- /END Separator -->
+            <a href="../main/Description.html" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-question fa-fw mr-3"></span>
+                    <span class="menu-collapsed">說明</span>
+                </div>
+            </a>
+            
+            <!-- Logo -->
+            <!-- <li class="list-group-item logo-separator d-flex justify-content-center">
+                <img src='https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg' width="30" height="30" />    
+            </li> -->   
+        </ul><!-- List Group END-->
+    </div><!-- sidebar-container END -->
+
+    <!-- MAIN -->
+    <div class="col">
+        
+<!--         <h1>
+            Collapsing Menu
+            <small class="text-muted">Version 2.1</small>
+        </h1>
+        
+        
+        <div class="card">
+            <h4 class="card-header">Requirements</h4>
+            <div class="card-body">
+                <ul>
+                    <li>JQuery</li>
+                    <li>Bootstrap 4 beta-3</li>
+                </ul>
+            </div>
+        </div> -->
+
+
+                                            <!-- https://bootsnipp.com/snippets/2q81r 這個是參考的網址-->
+
+<a><img src="../img/Logo.png" class="damo"></a>
+
+        <div class="col-md-12" style="margin-top:5%;">
+       <input type="text" class="form-control" style="width: 15%" placeholder="請輸入關鍵字" id="simpleSearch"/>
+        <div class="form-group">
+           <label for="filter">評價星級</label>
+           <select class="form-control" style="width: 15%" id="star">
+               <option value="0"selected>請選擇星級</option>
+               <option value="1">3顆星</option>
+               <option value="2">4顆星</option>                                     
+               <option value="3">不限</option>
+           </select>
+         </div>
+
+         <div class="form-group">
+           <label for="filter">搜尋半徑(公尺)</label>
+           <input type="text" class="form-control" style="width: 15%" placeholder="請輸入距離" id="distance"/>
+         </div>
+
+        <button type="button" class="btn btn-outline-primary" id="submit"><span class="fa fa-search fa-fw mr-3" ria-hidden="true">搜尋</span></button>
+
+<div class="container">
+    <div class="row" style="margin-top:-30%;">
+        <div class="col-md-12" style="margin-top: 5%;">
+            <div class="input-group" id="adv-search">
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                           <!--  <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button> -->
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">                      
+                                </form>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <div class="table-responsive" id="sailorTableArea">
+            <table id="sailorTable" class=" table table-striped table-bordered table-hover tablesorter" width="100%" style="display: none; max-width:4800px">
+        <!-- <table id="sailorTable" class="table table-striped table-bordered sortable" width="100%" style="display: none;"> -->
+     
+            <thead>
+                <tr>
+
+                    <th class="name test1">店家名稱</th>
+                    <th class="test1">營業中</th>
+                    <th class="address test1">地址</th>
+                    <th class="rating test1">評分</th>
+                    <th class="ratingCount test1">評分數</th>
+                    <th class="floor test1"><CENTER>距離(M)</CENTER></th>
+                    <th class="rating test1"><font color="#E00000">認證</th>
+                    <th class="test1"><CENTER>詳細資料</CENTER></th>
+                    <th class="test1" ><CENTER>加入最愛</CENTER></th>
+                </tr>
+
+                    <!-- Button trigger modal -->
+                   
+
+                    <!-- Modal -->
+                    <div class="modal fade" style="margin-top: 10%;" id="exampleModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h2 class="modal-title" id="exampleModalLabel"><b>詳細資料</b></h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body test3";" id='info'>
+                          </div>    
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">關閉</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        </div>
+</div>
+
+
+
+      </div><!-- Main Col END -->   
+    </div><!-- body-row END --> 
+</div><!-- container -->
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
