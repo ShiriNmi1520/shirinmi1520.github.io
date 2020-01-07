@@ -83,6 +83,7 @@ $(document).ready(function() {
   $("#exampleModal").on("shown.bs.modal", function() {
     $("#myInput").trigger("focus");
   });
+
   function getLocation() {
     debugger;
     if (navigator.geolocation) {
@@ -91,10 +92,12 @@ $(document).ready(function() {
       alert("瀏覽器不支援定位功能!");
     }
   }
+
   function getPos(position) {
     sessionStorage.setItem("latitude", position.coords.latitude);
     sessionStorage.setItem("longitude", position.coords.longitude);
   }
+
   function updateTable(data, filter = false) {
     $("#sailorTable tbody").empty();
     $("table").show();
@@ -202,8 +205,15 @@ $(document).ready(function() {
     }
     $("#sailorTable").trigger("update")
   }
+
+  getLocation();
+
   $("#submit").click(function() {
     $("#sailorTable tbody").empty();
+    if(sessionStorage.getItem("latitude") == null || sessionStorage.getItem("longitude") == null) {
+      alert("尚未獲得位置資訊，請嘗試重新整理畫面!!");
+      return;
+    }
     var distance = 0;
     distance = $("#distance").val();
     if (
@@ -213,7 +223,6 @@ $(document).ready(function() {
     ) {
       distance = 500;
     }
-    getLocation();
     console.log(distance);
     $.ajax({
       type: "GET",
