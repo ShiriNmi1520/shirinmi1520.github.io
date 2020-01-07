@@ -12,6 +12,9 @@ var fcn = function(id) {
           <li>評分：${global_data[id].rating}</li>
           <li>評分數：${global_data[id].ratingCount}</li>
           <li>TFDA序號: ${global_data[id].tfdaSerial}</li>
+          <li>綠色餐廳類型: ${global_data[id].greenType}</li>
+          <li>綠色餐廳回饋內容: ${global_data[id].greenContent}</li>
+          <li>綠色餐廳備註: ${global_data[id].greenPS}</li>
           <a><img src="../img/FDA.png"></a>
           <a><img src="../img/Taichung.jpg"></a>
         </ul>
@@ -25,6 +28,9 @@ var fcn = function(id) {
           <li>地址：${global_data[id].address}</li>
           <li>評分：${global_data[id].rating}</li>
           <li>評分數：${global_data[id].ratingCount}</li>
+          <li>綠色餐廳類型: ${global_data[id].greenType}</li>
+          <li>綠色餐廳回饋內容: ${global_data[id].greenContent}</li>
+          <li>綠色餐廳備註: ${global_data[id].greenPS}</li>
           <a><img src="../img/Taichung.jpg"></a>
         </ul>
         `;
